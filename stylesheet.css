@@ -1,0 +1,41 @@
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin:0 0 0 -8px;
+    overflow: hidden;
+    background-color: grey;
+    position:fixed;
+    top:0;
+    width:100%;
+    display: block;
+}
+
+
+.navbar a {
+    color: white;
+    text-align:center;
+    padding: 25px 50px 25px 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    display:inline;
+    float: left;
+
+}
+
+
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar .logo-image a:hover{
+    background-color:grey;
+}
+
+.navbar .logo-image a{
+    padding:0;
+}
+
+.main{
+    margin-top:8em;
+}
