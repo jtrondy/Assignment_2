@@ -9,7 +9,18 @@
     width:100%;
     display: block;
 }
-
+.quote {
+    padding-top: 100px;
+    text-align: center;
+}
+.slide  {
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 300px;
+}
 
 .navbar a {
     color: white;
