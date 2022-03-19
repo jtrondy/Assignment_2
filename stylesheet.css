@@ -16,13 +16,16 @@
 .navbar {
     padding: 0;
     margin:0 0 0 -8px;
-    overflow: hidden;
+    /*overflow: hidden*/
+    overflow: auto;
     background-color: grey;
     position: fixed;
     top:0;
     width:100%;
-    display: block;
-    z-index: 300;
+    /*display: inline;*/
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
 }
 .navbar a {
     color: white;
