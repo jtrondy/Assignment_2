@@ -47,6 +47,28 @@
 .navbar .logo-image a{
     padding:0;
 }
+ /*three image containers (25% for 4, 50% for 2 etc)*/
+.columnimage {
+  float: left;
+  width: 30%;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+/*clear floats after image containers */
+.rowimage::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
 .main{
     /*margin-top:8em;*/
+}
+footer{ 
+	text-align: center;
+	padding: 2px;
+	margin: -8px;
+	background-color: grey;
+	color: white;
 }
