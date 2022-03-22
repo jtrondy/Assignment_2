@@ -39,7 +39,7 @@
     padding-left: 5px;
     text-decoration: none;
     color: white;
-    font-size:18px;
+    font-size:2vh;
     position: relative;
 }
 #nav_bar img{
@@ -67,6 +67,7 @@ footer{
 	padding: 2px;
 	margin: -8px;
     text-decoration: none;
+    font-size: 1.5vh;
 	background-color: #333333;
     font-family: 'Work Sans', sans-serif;
     font-weight:800;
