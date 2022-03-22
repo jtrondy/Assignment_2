@@ -6,6 +6,7 @@
 /*    width: 50vh;*/
 /*    height: 50vh;*/
 /*}*/
+
 .slideshow_container{
     height: 200px;
     position: relative;
@@ -20,6 +21,7 @@
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
+    font-size: 1.25vw;
 }
 #nav_bar{
     display: flex;
@@ -35,6 +37,10 @@
     text-decoration: none;
     color: white;
     font-size:2vw;
+}
+#nav_bar img{
+    max-width: 100%;
+    height: auto;
 }
 #nav_bar a:hover {
     color: #82FFE8;
