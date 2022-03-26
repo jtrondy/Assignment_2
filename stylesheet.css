@@ -5,17 +5,18 @@
 }
 #details-map-grid-container{
     height: 25vh;
-    width: 100vw;
+    width: 92.4vw;
+    margin: auto;
     display: flex;
 }
 #details-map-grid-container .map {
     margin: auto;
-    width: 45%;
+    width: 47.5%;
     height: 400px;
 }
 #details-map-grid-container .contact-information{
     margin: auto;
-    width: 45%;
+    width: 47.5%;
     height: 400px;
 }
 
