@@ -3,29 +3,44 @@
     width: 90vw;
     margin: auto;
 }
-#details-map-grid-container{
-    height: 25vh;
+#details-map-flex-container{
     width: 92.4vw;
     margin: auto;
     display: flex;
-
 }
-#details-map-grid-container .map {
+#details-map-flex-container .map {
     margin: auto;
     width: 47.5%;
-    height: 400px;
+    height: 280px;
 }
-#details-map-grid-container .contact-information{
+#details-map-flex-container .contact-information{
     margin: auto;
     width: 47.5%;
-    height: 400px;
+    height: auto;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
 }
-
 .slideshow_container{
     height: 200px;
     position: relative;
 }
 .slide  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contactus-banner{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    position: relative;
+}
+#contactus-banner h1{
+    text-align: center;
+    font-size: 3vw;
+}
+#contactus-banner img{
     position: absolute;
     width: 100%;
     height: 100%;
