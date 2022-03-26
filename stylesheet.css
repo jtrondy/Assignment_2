@@ -1,11 +1,23 @@
-/*#grid-container{*/
-/*    display: grid;*/
-/*    height: 100vh;*/
-/*}*/
-/*.map {*/
-/*    width: 50vh;*/
-/*    height: 50vh;*/
-/*}*/
+#contactus-form-container{
+    height: 60vh;
+    width: 90vw;
+    margin: auto;
+}
+#details-map-grid-container{
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+}
+#details-map-grid-container .map {
+    margin: auto;
+    width: 45%;
+    height: 400px;
+}
+#details-map-grid-container .contact-information{
+    margin: auto;
+    width: 45%;
+    height: 400px;
+}
 
 .slideshow_container{
     height: 200px;
