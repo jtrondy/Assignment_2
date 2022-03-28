@@ -23,17 +23,45 @@
     </div>
 
     <div id="contactus-form-container">
-        <form>
-            <fieldset>
-                <legend>Ask us a question!</legend>
-                <label for="name_text_input"></label>
-                <input type="text_input" id="name_text_input" placeholder="Enter your name">
+        <div class="column">
+            <form>
                 <br>
-            </fieldset>
-        </form>
-
+                <label for="name_text_input">Name</label><br>
+                <input type="text" id="name_text_input" placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="phone_number">Contact number</label><br>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="0271231234">
+                <br>
+                <br>
+                <label for="email_address">Contact email</label><br>
+                <input type="email" id="email_address" name="email_address" placeholder="example@domain.co.nz">
+                <br>
+                <br>
+                <label for="contact_reason">Subject line</label><br>
+                <select id="contact_reason" name="contact_reason">
+                    <option value="question" selected>Question/Query</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </form>
+        </div>
+        <div class="column">
+            <form>
+                <br>
+                <label for="other_specify">If other, please specify</label><br>
+                <input type="text" id="other_specify" placeholder="Enter reason for contact here">
+                <br>
+                <br>
+                <label for="contact_text_area"></label>
+                <textarea id="contact_text_area" name="contact_text_area" rows="auto" cols="auto"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-    <hr>
+
     <div id="details-map-flex-container">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0529742207937!2d175.
             27727031514775!3d-37.78879827975693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18a57fa16281%3A0x72b05e2e8812d179!

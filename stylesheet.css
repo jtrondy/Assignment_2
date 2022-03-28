@@ -15,10 +15,15 @@
     object-fit: cover;
 }
 #contactus-form-container{
-    height: 50vh;
-    width: 90vw;
+    height: 30vh;
+    width: 30vw;
     padding-top: 7.5%;
+    padding-bottom: 7.5%;
     margin: auto;
+    display: flex;
+}
+#contactus-form-container .column{
+    flex: 15%;
 }
 #details-map-flex-container{
     width: 92.4vw;
