@@ -35,6 +35,7 @@
     margin: auto;
     display: flex;
     height: 50vh;
+    flex-direction: row;
 }
 #details-map-flex-container .map {
     margin: auto;
@@ -56,6 +57,11 @@
 }
 .contact-information h1 {
     font-size: 3vh;
+}
+@media (max-width: 800px) {
+    #details-map-flex-container {
+        flex-direction: column;
+    }
 }
 .slideshow_container{
     height: 200px;
