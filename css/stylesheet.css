@@ -21,26 +21,31 @@
     padding-bottom: 7.5%;
     margin: auto;
     display: flex;
+
 }
 #contactus-form-container .column{
     flex: 15%;
+
 }
 #details-map-flex-container{
     width: 92.4vw;
     margin: auto;
     display: flex;
+    height: 50vh;
 }
 #details-map-flex-container .map {
     margin: auto;
     width: 47.5%;
-    height: 280px;
+    height: 100%;
+    box-shadow: -1px 0 10px #000000;
 }
 #details-map-flex-container .contact-information{
     margin: auto;
     width: 47.5%;
-    height: auto;
+    height: 100%;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
+    box-shadow: -1px 0 10px #000000;
 }
 .slideshow_container{
     height: 200px;
