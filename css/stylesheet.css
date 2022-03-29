@@ -63,6 +63,13 @@
     width: 5%;
     object-fit: cover;
 }
+.contact-information a{
+    text-decoration: none;
+    color: black;
+}
+.contact-information a:hover{
+    color: grey;
+}
 @media (max-width: 850px) {
     #details-map-flex-container {
         flex-direction: column;
