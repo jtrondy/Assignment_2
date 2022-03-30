@@ -15,17 +15,21 @@
     object-fit: cover;
 }
 #contactus-form-container{
-    height: 30vh;
-    width: 30vw;
-    padding-top: 7.5%;
-    padding-bottom: 7.5%;
-    margin: auto;
+    height: auto;
+    width: 70vw;
+    justify-content: center;
+    margin: 10% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     display: flex;
+    box-shadow: -1px 0 10px #000000;
 
 }
 #contactus-form-container .column{
     flex: 15%;
-
+}
+#contactus-form-container textarea{
+    width: 100%;
+    height: auto;
 }
 /*.contact-information h1 h2 h3 {*/
 /*    display: inline;*/
@@ -168,6 +172,7 @@ footer{
     #details-map-flex-container {
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
     .contact-information p{
         font-size: 2.5vh;
@@ -176,6 +181,14 @@ footer{
         height: 10%;
         width: 10%;
     }
+    #contactus-form-container{
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        align-items: center;
+
+    }
+
 }
 @media (max-width: 600px) {
     #nav_bar {
@@ -185,4 +198,5 @@ footer{
     #nav_bar a{
         color: black;
     }
+
 }
