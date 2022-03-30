@@ -31,9 +31,17 @@
     resize: none;
 }
 #contactus-form-container input {
-    width: 50%;
+    width: 75%;
     border: 10px black;
     border-radius: 5px;
+    font-size: 1.25vw;
+}
+#contactus-form-container select {
+    width: 50%;
+    color: grey;
+    border: 10px black;
+    border-radius: 5px;
+    font-size: 1.25vw;
 }
 #contactus-form-container label {
     font-family: 'Work Sans', sans-serif;
@@ -60,7 +68,6 @@
     height: 100%;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-    background-color: lightgrey;
     box-shadow: -1px 0 10px #000000;
 
 }
@@ -198,6 +205,10 @@ footer{
     }
     #contactus-form-container input{
         width: 100%;
+        font-size: 3vw;
+    }
+    #contactus-form-container select {
+        font-size: 3vw;
     }
     #contactus-banner h1{
         border-top: 2px black;
