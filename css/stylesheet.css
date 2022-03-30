@@ -1,29 +1,28 @@
-/*#contactus-banner{*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    margin: auto;*/
-/*    !*position: relative;*!*/
-/*}*/
+#contactus-banner{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#contactus-banner h1{
+    text-align: center;
+    font-size: 3vw;
+    color: cornflowerblue;
+    font-family: 'Work Sans', sans-serif;
+}
 
 
 #contactus-form-container{
     height: auto;
     width: 50vw;
-    /*justify-content: center;*/
+    justify-content: center;
     margin: 2.5% auto 5% auto;
     padding: 2.5% 5% 2.5% 5%;
     display: flex;
     box-shadow: -1px 0 10px #000000;
 }
-#contactus-form-container .contactus_form_row{
-    text-align: center;
-    flex-direction: row;
-    font-size: 1vw;
-    color: cornflowerblue;
-    font-family: 'Work Sans', sans-serif;
-}
 #contactus-form-container .contactus_form_column{
     flex: 15%;
+    flex-direction: column;
 }
 #contactus-form-container textarea{
     resize: none;
@@ -196,6 +195,10 @@ footer{
     }
     #details-map-flex-container .contact-information{
         width: 100%;
+    }
+    #contactus-banner h1 {
+        text-align: center;
+        font-size: 5vw;
     }
     #contactus-form-container label {
         font-size: 2vw;
