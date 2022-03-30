@@ -22,15 +22,16 @@
     padding: 5% 5% 5% 5%;
     display: flex;
     box-shadow: -1px 0 10px #000000;
-
 }
 #contactus-form-container .column{
     flex: 15%;
 }
+
+
 #contactus-form-container textarea{
-    width: 100%;
-    height: auto;
+    max-width: fit-content;
 }
+
 /*.contact-information h1 h2 h3 {*/
 /*    display: inline;*/
 /*}*/
