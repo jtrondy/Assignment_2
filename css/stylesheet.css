@@ -1,25 +1,25 @@
 #contactus-banner{
     width: 100%;
-    height: 10vh;
+    height: auto;
     margin: auto;
-    position: relative;
+    /*position: relative;*/
 }
 #contactus-banner h1{
     text-align: center;
     font-size: 3vw;
     font-family: 'Work Sans', sans-serif;
 }
-#contactus-banner img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/*#contactus-banner img{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
 #contactus-form-container{
     height: auto;
     width: 70vw;
     justify-content: center;
-    margin: 10% 10% 5% 10%;
+    margin: 2.5% 10% 5% 10%;
     padding: 5% 5% 5% 5%;
     display: flex;
     box-shadow: -1px 0 10px #000000;
