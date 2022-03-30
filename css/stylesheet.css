@@ -17,9 +17,13 @@
 /*}*/
 #contactus-form-container{
     height: auto;
-    width: 70vw;
+    width: 80vw;
     justify-content: center;
-    margin: 2.5% 10% 5% 10%;
+    margin: 2.5% auto 5% auto;
+    /*margin-top: 2.5%;*/
+    /*margin-bottom: 5%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
     padding: 2.5% 5% 2.5% 5%;
     display: flex;
     box-shadow: -1px 0 10px #000000;
