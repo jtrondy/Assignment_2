@@ -26,15 +26,15 @@
 #contactus-form-container .column{
     flex: 15%;
 }
-
-
 #contactus-form-container textarea{
-    max-width: fit-content;
+    resize: none;
+}
+#contactus-form-container input{
+    width: 50%;
+    border: 10px grey;
+    border-radius: 5px;
 }
 
-/*.contact-information h1 h2 h3 {*/
-/*    display: inline;*/
-/*}*/
 #details-map-flex-container{
     width: 92.4vw;
     margin: auto;
@@ -187,7 +187,9 @@ footer{
         width: 70%;
         height: auto;
         align-items: center;
-
+    }
+    #contactus-form-container input{
+        width: 100%;
     }
 
 }
