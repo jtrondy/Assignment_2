@@ -41,18 +41,20 @@ footer{
     resize: none;
     height: 20vh;
     width: 100%;
+    border: 2px grey solid;
+    border-radius: 5px;
     font-size: 16px;
 }
 #contactus_form_container input {
     width: 90%;
-    border: 10px black;
+    border: 2px grey solid;
     border-radius: 5px;
     font-size: 1.25vw;
 }
 #contactus_form_container select {
     width: 50%;
     color: grey;
-    border: 10px black;
+    border: 2px grey solid;
     border-radius: 5px;
     font-size: 1.25vw;
 }
