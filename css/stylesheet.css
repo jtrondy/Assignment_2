@@ -186,12 +186,10 @@ footer{
         flex-direction: column;
         width: 70%;
         height: auto;
-        align-items: center;
     }
     #contactus-form-container input{
         width: 100%;
     }
-
 }
 @media (max-width: 600px) {
     #nav_bar {
@@ -201,5 +199,4 @@ footer{
     #nav_bar a{
         color: black;
     }
-
 }
