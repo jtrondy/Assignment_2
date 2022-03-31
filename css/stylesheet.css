@@ -180,6 +180,15 @@ footer{
     justify-content: center;
     flex-direction: row;
 }
+
+.index_footer a:visited{
+    color:white;
+}
+
+.index_footer a:hover {
+    color: #82FFE8;
+}
+
 /*END OF INDEX*/
 
 /*START OF SERVICE*/
