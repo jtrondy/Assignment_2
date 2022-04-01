@@ -7,12 +7,11 @@
  */
 
 /*START OF UNIFIED CSS - override these with selector CLASS or above if needed!*/
-body,
-header,
-footer{
+body{
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
 }
+
 /*END OF UNIFIED CSS*/
 /*START OF CONTACT US*/
 #contactus_banner{
@@ -32,6 +31,7 @@ footer{
     padding: 2.5% 5% 2.5% 5%;
     display: flex;
     box-shadow: -1px 0 10px #000000;
+    color: cornflowerblue;
 }
 #contactus_form_container .contactus_form_column{
     flex: 15%;
@@ -43,24 +43,17 @@ footer{
     width: 100%;
     border: 2px grey solid;
     border-radius: 5px;
-    /*font-size: 20px;*/
 }
 #contactus_form_container input {
     width: 90%;
     border: 2px grey solid;
     border-radius: 5px;
-    /*font-size: 20px;*/
 }
 #contactus_form_container select {
     width: 50%;
     color: grey;
     border: 2px grey solid;
     border-radius: 5px;
-    /*font-size: 20px;*/
-}
-#contactus_form_container label {
-    color: cornflowerblue;
-    /*font-size: 20px;*/
 }
 #contactus_details_map_container{
     width: 92.4vw;
@@ -203,7 +196,6 @@ footer{
     color: black;
     border: 2px solid black;
 }
-
 .index_button_colour:hover {
     background-color: #333333;
     color: white;
@@ -243,30 +235,19 @@ footer{
         width: 100%;
         height: auto;
     }
-    /*.contactus_information p{*/
-    /*    font-size: 2.5vw;*/
-    /*}*/
     #contactus_form_container{
         width: 70%;
     }
-    #contactus_form_container label {
-        font-size: 2vw;
-    }
-    #contactus_form_container input{
-        font-size: 2vw;
-    }
-    #contactus_form_container select {
-        font-size: 2vw;
-    }
-    #contactus_form_container h1{
-        font-size: 4vw;
-    }
+
     /*END OF CONTACT US*/
 
 
     /*START OF INDEX*/
     .index_quote {
         font-size: 12px;
+    }
+    #index_nav_bar a{
+        font-size: 16px;
     }
 
 
@@ -310,15 +291,7 @@ footer{
     #contactus_form_container {
         flex-direction: column;
         align-items: center;
-    }
-    #contactus_form_container label {
-        font-size: 3vw;
-    }
-    #contactus_form_container input{
-        font-size: 3vw;
-    }
-    #contactus_form_container select {
-        font-size: 3vw;
+        font-size: 18px;
     }
     #contactus_banner h1{
         font-size: 30px;
