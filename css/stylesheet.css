@@ -25,7 +25,6 @@ footer{
     color: cornflowerblue;
 }
 #contactus_form_container{
-    height: auto;
     width: 50vw;
     justify-content: center;
     margin: 2.5% auto 5% auto;
@@ -66,7 +65,7 @@ footer{
     width: 92.4vw;
     margin: auto;
     display: flex;
-    height: 50vh;
+    height: 400px;
     flex-direction: row;
 }
 #contactus_details_map_container .contactus_map {
@@ -76,17 +75,16 @@ footer{
     box-shadow: -1px 0 10px #000000;
 }
 #contactus_details_map_container .contactus_information{
-    margin: auto;
     width: 47.5%;
-    height: 100%;
+    height: auto;
     text-align: center;
     box-shadow: -1px 0 10px #000000;
 }
 .contactus_information p{
-    font-size: 2.5vh;
+    font-size: 20px;
 }
 .contactus_information h1 {
-    font-size: 3vh;
+    font-size: 28px;
 }
 .contactus_information img {
     height: auto;
@@ -250,9 +248,9 @@ footer{
         text-align: center;
         font-size: 5vw;
     }
-    .contactus_information p{
-        font-size: 2.5vw;
-    }
+    /*.contactus_information p{*/
+    /*    font-size: 2.5vw;*/
+    /*}*/
     #contactus_form_container{
         width: 70%;
     }
