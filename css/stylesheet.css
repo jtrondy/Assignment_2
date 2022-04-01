@@ -233,8 +233,8 @@ footer{
         font-size: 2.5vw;
     }
     .contactus_information img{
-        height: 10%;
-        width: 10%;
+        height: 6%;
+        width: 6%;
     }
     #contactus_form_container{
         flex-direction: column;
