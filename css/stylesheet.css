@@ -11,6 +11,7 @@ body,
 header,
 footer{
     font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
 }
 /*END OF UNIFIED CSS*/
 /*START OF CONTACT US*/
@@ -21,7 +22,7 @@ footer{
 }
 #contactus_banner h1{
     text-align: center;
-    font-size: 3vw;
+    font-size: 42px;
     color: cornflowerblue;
 }
 #contactus_form_container{
@@ -38,28 +39,28 @@ footer{
 }
 #contactus_form_container textarea{
     resize: none;
-    height: 20vh;
+    height: 150px;
     width: 100%;
     border: 2px grey solid;
     border-radius: 5px;
-    font-size: 16px;
+    /*font-size: 20px;*/
 }
 #contactus_form_container input {
     width: 90%;
     border: 2px grey solid;
     border-radius: 5px;
-    font-size: 1.25vw;
+    /*font-size: 20px;*/
 }
 #contactus_form_container select {
     width: 50%;
     color: grey;
     border: 2px grey solid;
     border-radius: 5px;
-    font-size: 1.25vw;
+    /*font-size: 20px;*/
 }
 #contactus_form_container label {
     color: cornflowerblue;
-    font-size: 1.5vw;
+    /*font-size: 20px;*/
 }
 #contactus_details_map_container{
     width: 92.4vw;
@@ -79,9 +80,6 @@ footer{
     height: auto;
     text-align: center;
     box-shadow: -1px 0 10px #000000;
-}
-.contactus_information p{
-    font-size: 20px;
 }
 .contactus_information h1 {
     font-size: 28px;
@@ -166,6 +164,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 14px;
 }
 /*.index_homeImg{
     width: 100%;
@@ -244,10 +243,6 @@ footer{
         width: 100%;
         height: auto;
     }
-    #contactus_banner h1 {
-        text-align: center;
-        font-size: 5vw;
-    }
     /*.contactus_information p{*/
     /*    font-size: 2.5vw;*/
     /*}*/
@@ -324,6 +319,9 @@ footer{
     }
     #contactus_form_container select {
         font-size: 3vw;
+    }
+    #contactus_banner h1{
+        font-size: 30px;
     }
     /*END OF CONTACTUS*/
 
