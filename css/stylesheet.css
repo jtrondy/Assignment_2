@@ -89,8 +89,8 @@ footer{
     font-size: 3vh;
 }
 .contactus_information img {
-    height: 5%;
-    width: 5%;
+    height: auto;
+    width: auto;
     object-fit: cover;
 }
 .contactus_information a{
@@ -240,36 +240,30 @@ footer{
     }
     #contactus_details_map_container .contactus_map {
         width: 100%;
-        height: 40vh;
+        height: 400px
     }
     #contactus_details_map_container .contactus_information{
         width: 100%;
+        height: auto;
     }
     #contactus_banner h1 {
         text-align: center;
         font-size: 5vw;
     }
-    #contactus_form_container label {
-        font-size: 3vw;
-    }
     .contactus_information p{
         font-size: 2.5vw;
     }
-    .contactus_information img{
-        height: 10%;
-        width: 10%;
-    }
     #contactus_form_container{
-        flex-direction: column;
-        align-items: center;
         width: 70%;
-        height: auto;
+    }
+    #contactus_form_container label {
+        font-size: 2vw;
     }
     #contactus_form_container input{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     #contactus_form_container select {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     #contactus_form_container h1{
         font-size: 4vw;
@@ -313,10 +307,24 @@ footer{
     #index_nav_bar a{
         color: black;
     }
+
     /*END OF INDEX*/
 
 
     /*START OF CONTACTUS*/
+    #contactus_form_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contactus_form_container label {
+        font-size: 3vw;
+    }
+    #contactus_form_container input{
+        font-size: 3vw;
+    }
+    #contactus_form_container select {
+        font-size: 3vw;
+    }
     /*END OF CONTACTUS*/
 
 
