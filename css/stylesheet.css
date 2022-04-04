@@ -51,6 +51,11 @@ body{
     border-radius: 5px;
     font-size: 16px;
 }
+#contactus_form_container input[type="submit"] {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
 #contactus_form_container select {
     width: 50%;
     color: grey;
