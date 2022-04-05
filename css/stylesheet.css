@@ -368,7 +368,17 @@ body{
         font-size: 30px;
     }
     /*END OF CONTACTUS*/
-
+    /*START OF INDEX*/
+    .index_cover{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+    }
+    .index_box {
+        height: auto;
+        width: 80%;
+    }
 
     /*START OF SERVICE*/
     .service_cover{
