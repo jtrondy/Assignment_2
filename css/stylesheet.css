@@ -19,6 +19,7 @@ body{
     height: auto;
     margin: auto;
 }
+#service_banner h1,
 #contactus_banner h1{
     text-align: center;
     font-size: 42px;
@@ -219,12 +220,6 @@ body{
     height: 70px;
     margin: auto;
 }
-#service_banner h1{
-    text-align: center;
-    font-size: 42px;
-    color: cornflowerblue;
-}
-
 .service_cover{
     width: 80%;
     height: 100%;
