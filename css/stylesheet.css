@@ -157,10 +157,7 @@ body{
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 5%;
-    padding-bottom:2.2%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 3%;
+    padding: 3% 1% 2.2% 1%;
     box-shadow: -1px 0 10px #000000;
     align-items: center;
     justify-content: center;
@@ -212,6 +209,67 @@ body{
 /*END OF INDEX*/
 
 /*START OF SERVICE*/
+
+#service_banner{
+    /*background-image: url("../images/services/fillerimage-services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333333; */
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+#service_banner h1{
+    text-align: center;
+    font-size: 42px;
+    color: cornflowerblue;
+}
+
+.service_cover{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+
+}
+
+.service_box{
+    height:100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    padding: 3% 1% 2% 1%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+    box-shadow: -1px 0 10px #000000;
+}
+
+.service_button {
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.service_box h2{
+    color: #097969;
+}
+
+.service_button:hover {
+    color: #097969;
+    font-weight: bold;
+}
 /*END OF SERVICE*/
 
 
@@ -228,6 +286,8 @@ body{
 
 /*START OF MEDIA QUERIES*/
 
+
+
 @media (max-width: 992px) {
     /*START OF CONTACT US*/
     #contactus_details_map_container {
@@ -242,6 +302,7 @@ body{
     #contactus_details_map_container .contactus_information{
         width: 100%;
         height: auto;
+        margin-top: 30px;
     }
     #contactus_form_container{
         width: 70%;
@@ -260,6 +321,8 @@ body{
 
 
     /*START OF SERVICE*/
+
+
     /*END OF SERVICE*/
 
 
@@ -308,6 +371,16 @@ body{
 
 
     /*START OF SERVICE*/
+    .service_cover{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+    }
+    .service_box {
+        height: auto;
+        width: 80%;
+    }
     /*END OF SERVICE*/
 
     /*START OF BOOKING*/
