@@ -102,6 +102,11 @@ body{
 
 
 /*START OF INDEX*/
+
+#bottom-background{
+    background-image: linear-gradient(to right, #575e61, #7d8285);
+}
+
 .index_slideshow_container{
     height: 200px;
     position: relative;
@@ -164,6 +169,7 @@ body{
     justify-content: center;
     text-align: center;
     font-size: 14px;
+    background-color: white;
 }
 /*.index_homeImg{
     width: 100%;
