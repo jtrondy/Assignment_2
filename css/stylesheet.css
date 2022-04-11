@@ -18,15 +18,14 @@ input[type="submit"]:hover{
     color: white;
     background-color: grey;
 }
-
-/*END OF UNIFIED CSS*/
-/*START OF CONTACT US*/
-#service_banner h1,
-#contactus_banner h1{
+.unified_banner{
     text-align: center;
-    font-size: 42px;
+    font-size: 25px;
     color: cornflowerblue;
 }
+/*END OF UNIFIED CSS*/
+/*START OF CONTACT US*/
+
 #contactus_form_container{
     width: 50vw;
     margin: 2.5% auto 5% auto;
