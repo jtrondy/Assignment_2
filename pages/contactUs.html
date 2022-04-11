@@ -25,18 +25,18 @@
     <div id="contactus_form_container">
 <!--        form column one-->
         <div class="contactus_form_column">
-            <form>
+            <form name="contactus_form">
                 <br>
-                <label for="contactus_name_text_input">Name</label><br>
-                <input type="text" id="contactus_name_text_input" placeholder="Enter your name">
+                <label for="contactus_name_text_input">Name<span class="required_form">*</span></label><br>
+                <input type="text" id="contactus_name_text_input" placeholder="Enter your name" required>
                 <br>
                 <br>
                 <label for="contactus_phone_number">Contact number</label><br>
                 <input type="tel" id="contactus_phone_number" name="phone_number" placeholder="0271231234">
                 <br>
                 <br>
-                <label for="contactus_email_address">Contact email</label><br>
-                <input type="email" id="contactus_email_address" name="email_address" placeholder="example@domain.co.nz">
+                <label for="contactus_email_address">Contact email<span class="required_form">*</span></label><br>
+                <input type="email" id="contactus_email_address" name="email_address" placeholder="example@domain.co.nz" required>
                 <br>
                 <br>
                 <label for="contactus_contact_reason">Subject line</label><br>
@@ -48,8 +48,9 @@
             </form>
         </div>
 <!--        form column two-->
+
         <div class="contactus_form_column">
-            <form>
+            <form name="contactus_form">
                 <br>
                 <label for="contactus_other_specify">If other, please specify</label><br>
                 <input type="text" id="contactus_other_specify" placeholder="Other">

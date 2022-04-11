@@ -11,6 +11,9 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
 }
+.required_form{
+    color: red;
+}
 
 /*END OF UNIFIED CSS*/
 /*START OF CONTACT US*/
