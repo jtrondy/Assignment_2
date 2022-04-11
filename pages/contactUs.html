@@ -22,10 +22,11 @@
         <h1>Contact us</h1>
     </div>
 <!--    container to hold 2 form columns-->
-    <div id="contactus_form_container">
-<!--        form column one-->
-        <div class="contactus_form_column">
-            <form name="contactus_form">
+    <form>
+        <div id="contactus_form_container">
+    <!--        form column one-->
+
+            <div class="contactus_form_column">
                 <br>
                 <label for="contactus_name_text_input">Name<span class="required_form">*</span></label><br>
                 <input type="text" id="contactus_name_text_input" placeholder="Enter your name" required>
@@ -45,12 +46,9 @@
                     <option value="feedback">Feedback</option>
                     <option value="other">Other</option>
                 </select>
-            </form>
-        </div>
-<!--        form column two-->
-
-        <div class="contactus_form_column">
-            <form name="contactus_form">
+            </div>
+    <!--        form column two-->
+            <div class="contactus_form_column">
                 <br>
                 <label for="contactus_other_specify">If other, please specify</label><br>
                 <input type="text" id="contactus_other_specify" placeholder="Other">
@@ -62,9 +60,10 @@
                 <br>
                 <label for="contactus_submit_button"></label>
                 <input id="contactus_submit_button" type="submit" value="Submit">
-            </form>
+            </div>
+
         </div>
-    </div>
+    </form>
 <!--    container for map and contact information layout-->
     <div id="contactus_details_map_container">
         <iframe class="contactus_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0529742207937!2d175.
