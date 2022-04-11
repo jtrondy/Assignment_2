@@ -21,11 +21,6 @@ input[type="submit"]:hover{
 
 /*END OF UNIFIED CSS*/
 /*START OF CONTACT US*/
-#contactus_banner{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
 #service_banner h1,
 #contactus_banner h1{
     text-align: center;
