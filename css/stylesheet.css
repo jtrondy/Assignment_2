@@ -29,7 +29,6 @@ input[type="submit"]:hover{
 }
 #contactus_form_container{
     width: 50vw;
-    justify-content: center;
     margin: 2.5% auto 5% auto;
     padding: 2.5% 5% 2.5% 5%;
     display: flex;
@@ -37,13 +36,12 @@ input[type="submit"]:hover{
     color: cornflowerblue;
 }
 #contactus_form_container .contactus_form_column{
-    flex: 15%;
-    flex-direction: column;
+    flex: 1;
 }
 #contactus_form_container textarea{
     resize: vertical;
     height: 150px;
-    width: 100%;
+    width: 90%;
     border: 2px grey solid;
     border-radius: 5px;
     font-size: 16px;
