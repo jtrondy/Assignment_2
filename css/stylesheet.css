@@ -284,6 +284,35 @@ input[type="submit"]:hover{
 
 
 /*START OF ABOUT US*/
+#about_us_banner {
+    /*background-image: url("../images/services/fillerimage-services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333333; */
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+.about_us_cover{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+.about_us_box{
+    height:100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    padding: 3% 1% 2% 1%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+    box-shadow: -1px 0 10px #000000;
+}
 /*END OF ABOUT US*/
 
 
