@@ -39,7 +39,7 @@ body{
     flex-direction: column;
 }
 #contactus_form_container textarea{
-    resize: none;
+    resize: vertical;
     height: 150px;
     width: 100%;
     border: 2px grey solid;
