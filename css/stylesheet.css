@@ -128,7 +128,7 @@ input[type="submit"]:hover{
     flex-direction: row;
     background-color: #333333;
     font-weight: 800;
-    margin: 0;
+    margin: 20px -8px -8px;
 }
 #index_nav_bar a{
     flex: 1;
@@ -213,22 +213,96 @@ input[type="submit"]:hover{
 
 /*START OF SERVICE*/
 
-#service_banner{
-    /*background-image: url("../images/services/fillerimage-services.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #333333; */
-    width: 100%;
-    height: 70px;
-    margin: auto;
+/* Start Of Code For Slideshow */
+.service_slideshow {
+    margin:-8px;
 }
+
+.service_slide {
+    position: relative;
+}
+
+.service_image{
+    width:100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.service_slide .text-block {
+    position: absolute;
+    width: 50%;
+    bottom: 30px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.service_slideshow .prev, .next{
+    cursor:pointer;
+    position: absolute;
+    top: 400px;
+    width:auto;
+    margin-top: 100px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select:none;
+}
+
+.service_slideshow .next{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.service_slideshow .prev:hover, .next:hover{
+    background-color: black;
+}
+
+.dot{
+    cursor:pointer;
+    height:15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.7}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: 0.7}
+    to {opacity: 1}
+}
+
+/* Start of Code for 3 boxes */
 .service_cover{
     width: 80%;
     height: 100%;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-
 }
 
 .service_box{
@@ -267,92 +341,6 @@ input[type="submit"]:hover{
     color: #097969;
     font-weight: bold;
 }
-
-
-.service_slideshow {
-    width:100%;
-
-}
-
-.service_slide {
-    width: 100%;
-}
-
-.service_image{
-    width: 100%;
-    height: 5%;
-}
-
-/* Bottom right text */
-.service_slideshow .text-block {
-    position:absolute;
-    bottom: 5%;
-    right: 5%;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.service_slideshow .prev, .next{
-    cursor:pointer;
-    position: absolute;
-    top: 50%;
-    width:auto;
-    margin-top: 100px;
-    padding: 16px;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select:none;
-}
-
-.service_slideshow .next{
-    right:0;
-    border-radius: 3px 0 0 3px;
-}
-
-.service_slideshow .prev:hover, .next:hover{
-    background-color: black;
-}
-
-
-.dot{
-    cursor:pointer;
-    height:15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover{
-    background-color: #717171;
-}
-
-.fade{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade{
-    from{opacity: 0.7}
-    to {opacity: 1}
-}
-
-@keyframes fade{
-    from {opacity: 0.7}
-    to {opacity: 1}
-}
-
-
 
 /*END OF SERVICE*/
 
@@ -499,6 +487,17 @@ input[type="submit"]:hover{
     }
     /*END OF INDEX*/
     /*START OF SERVICE*/
+    .text-block{
+        font-size: 15px;
+    }
+
+    .text-block .text{
+        display:none;
+    }
+    .service_image{
+        height: 300px;
+    }
+
     .service_cover{
         flex-direction: column;
         align-items: center;
