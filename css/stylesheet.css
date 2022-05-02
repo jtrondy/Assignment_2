@@ -357,6 +357,7 @@ input[type="submit"]:hover{
 }
 .customer_feedback_grid>*{
     justify-self: center;
+    text-align: center;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -365,12 +366,13 @@ input[type="submit"]:hover{
     height: 100%;
     border: 2px grey solid;
     border-radius: 5px;
+    padding: 1px;
 }
 .cfg_item-2 p {
     border: 2px grey solid;
     border-radius: 5px;
+    padding: 10px;
 }
-
 /*END OF CUSTOMER FEEDBACK*/
 
 
