@@ -406,12 +406,12 @@ input[type="submit"]:hover{
     font-size: 16px;
 }
 .about_us_text {
-    padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
     font-size: 16px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
+    line-height: 27px;
 }
 /*END OF ABOUT US*/
 
