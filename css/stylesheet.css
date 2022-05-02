@@ -357,6 +357,8 @@ input[type="submit"]:hover{
 }
 .customer_feedback_grid>*{
     justify-self: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .cfg_item-1 img,
 .cfg_item-2 img,
