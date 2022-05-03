@@ -467,6 +467,9 @@ input[type="submit"]:hover{
         justify-content: center;
         padding-bottom: 25px;
     }
+    .cfg_item-2{
+        width: 75%;
+    }
     /*END OF CUSTOMER FEEDBACK*/
 
 
