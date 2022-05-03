@@ -407,8 +407,8 @@ input[type="submit"]:hover{
     padding-bottom: 15px;
     text-align: center;
     font-size: 16px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
     line-height: 27px;
 }
 /*END OF ABOUT US*/
