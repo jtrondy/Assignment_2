@@ -348,7 +348,7 @@ input[type="submit"]:hover{
 /*END OF BOOKING*/
 
 /*START OF CUSTOMER FEEDBACK*/
-.customer_feedback_grid {
+.customer_feedback_container {
     display: flex;
     justify-content: space-around;
 }
@@ -457,11 +457,11 @@ input[type="submit"]:hover{
 
 
     /*START OF CUSTOMER FEEDBACK*/
-    .customer_feedback_grid {
+    .customer_feedback_container {
         flex-direction: column;
         align-items: center;
     }
-    .customer_feedback_grid>* {
+    .customer_feedback_container>* {
         width: 90%;
         display: flex;
         justify-content: center;
