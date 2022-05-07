@@ -345,6 +345,12 @@ input[type="submit"]:hover{
 
 
 /*START OF BOOKING*/
+.booking_information_container-1 {
+    display: flex;
+}
+.payment_details_container-2 {
+    display: flex;
+}
 /*END OF BOOKING*/
 
 /*START OF CUSTOMER FEEDBACK*/
@@ -453,6 +459,7 @@ input[type="submit"]:hover{
 
 
     /*START OF BOOKING*/
+
     /*END OF BOOKING*/
 
 
