@@ -134,15 +134,20 @@
                 </div>
             </div>
         </div>
-        <div class="singleInfoBox">
-            <label for="titleDropList">Select Service Required</label>
-            <select id="titleDropList" class="titleDropList">
-                <option value="computerRepair">Computer Repairs</option>
-                <option value="phoneRepairs">Phone Repairs</option>
-                <option value="serverRepairs">Server Repairs</option>
-            </select>
+        <div class="bic_section-1">
+            <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
+                <select class=dropdown_css" id="booking_service_select">
+                    <option id="comp_repair_price" value="60">Computer Repairs</option>
+                    <option id="phone_repair_price" value="40">Phone Repairs</option>
+                    <option id="server_repair_price" value="80">Server Repairs</option>
+                </select>
+            </label>
         </div>
-        <p>Price: </p>
+        <div class="bic_section-1">
+            <span>Price: </span><span id="booking_price"></span>
+            <br>
+            <input type="button" value="calculate price" onclick="updatePrice()">
+        </div>
         <br>
         <label for="booking_description">DESCRIPTION</label><br>
         <textarea id="booking_description" name="booking_description"></textarea>

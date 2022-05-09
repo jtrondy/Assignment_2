@@ -21,6 +21,11 @@ function creditCardValidation(creditCardNum) {
         return false;
     }
 }*/
+function updatePrice() {
+    let price = document.getElementById("booking_service_select").value;
+    console.log(price);
+    document.getElementById("booking_price").textContent = '$' + price.toString();
+}
 function inputCheck() {
     var firstname = document.getElementById("firstname").value;
     var lastname = document.getElementById("lastname").value;
