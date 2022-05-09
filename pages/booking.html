@@ -179,6 +179,26 @@
                     be used to send booking confirmation</p>
             </div>
         </div>
+        <div class="unified_banner">
+            <h4 style="text-align: left">Payment Details</h4>
+        </div>
+        <div class="card_validation">
+            <label for="card_name">NAME ON CARD<span class="required_form">*</span></label>
+            <input class="card_validation_textbox" type="text" id="card_name" name="card_name">
+            <span id="card_name_error" style="color: red;"></span>
+            <br>
+            <label for="card_number">CARD NUMBER<span class="required_form">*</span></label>
+            <input class="card_validation_textbox" type="text" id="card_number" name="card_name">
+            <span id="card_number_error" style="color: red;"></span>
+            <br>
+            <label for="card_cvv">CVV<span class="required_form">*</span></label><br>
+            <input class="card_validation_textbox" id="card_cvv" type="text" name="card_cvv">
+            <span id="card_cvv_error" style="color: red;"></span>
+            <br>
+            <label for="card_date">DATE ON CARD<span class="required_form">*</span></label><br>
+            <input class="card_validation_textbox" id="card_date" oninput="dateInput();" type="month" name="card_date">
+            <span id="card_date_error" style="color: red;"></span>
+        </div>
         <div class="bookingButtons">
             <button type="button" onclick="inputCheck();">Confirm Booking</button>
             <button type="reset">Reset</button>
