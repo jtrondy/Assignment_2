@@ -6,13 +6,19 @@
     <title>Bookings</title>
     <link rel="icon" type="image/x-icon" href="../images/icons_logos/titleLogo.png">
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <script>
+
+    </script>
 </head>
 <body>
     <script src="../scripts/header.js"></script>
+    <script src="../scripts/bookings.js"></script>
     <div class="unified_banner">
         <h1>Booking</h1>
     </div>
-    <form>
+
+
+    <form name="form">
 <!--        Contains first name, last name, email address, and phone number-->
         <div class="booking_information_container-1">
             <div class="bic_section-1">
@@ -32,8 +38,10 @@
                 <input type="text" id="booking_lname" name="booking_lname" placeholder="Enter your last name" required>
                 <br>
                 <br>
+
                 <label for="booking_email_address">CONTACT EMAIL<span class="required_form">*</span></label><br>
                 <input type="email" id="booking_email_address" name="booking_email_address" placeholder="example@domain.co.nz" required>
+
             </div>
         </div>
 <!--        Contains home address, service required, description and urgent checkbox-->
@@ -66,7 +74,7 @@
         <div class="payment_details_container-1">
             <div class="pdc_section-1">
                 <label for="payment_card_number">CARD NUMBER<span class="required_form">*</span></label><br>
-                <input type="text" id="payment_card_number" name="payment_card_number" placeholder="**** **** **** ****" required>
+                <input type="text" id="payment_card_number" name="payment_card_number" placeholder="**** **** **** ****" required >
                 <br>
                 <br>
                 <label for="payment_full_name">FULL NAME ON CARD<span class="required_form">*</span></label><br>
@@ -98,7 +106,32 @@
         </div>
     </form>
 
+
+
+    <br><br><br><br><br><br><br>
+    <h1> TESTING </h1>
+    <form name="testing">
+        <label for="booking_email_address">CONTACT EMAIL<span class="required_form">*</span>
+            <br>
+            <input type="email" name="email" placeholder="example@domain.co.nz"/>
+        </label>
+        <input type="submit" name="validate" value="Validate" onclick="ValidateEmail(document.testing.email)">
+
+        <br><br>
+    </form>
+    <form name="testing2" action="#">
+        <label for="payment_card_number">CARD NUMBER<span class="required_form">*</span>
+            <br>
+            <input type="text" name="creditCardNum" placeholder="0000 1111 2222 3333"/>
+        </label>
+        <input type="submit" name="submit" value="Submit" onclick="creditCardValidation(document.testing2.creditCardNum)"/>
+    </form>
+    <h1> END TESTING </h1>
+    <br><br><br><br><br><br><br>
     <script src="../scripts/footer.js" defer></script>
+
+
+
 
 </body>
 </html>
