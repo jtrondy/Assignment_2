@@ -1,4 +1,4 @@
-function ValidateEmail(input) {
+/*function ValidateEmail(input) {
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (input.value.match(validRegex)) {
         alert("Valid email address!");
@@ -20,9 +20,57 @@ function creditCardValidation(creditCardNum) {
         alert("Please enter a valid credit card number.");
         return false;
     }
+}*/
+function inputCheck() {
+    var firstname = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
+    var address = document.getElementById("address").value;
+    var phone = document.getElementById("phoneNo").value;
+
+    document.getElementById("fnameerror").innerHTML = "";
+    document.getElementById("lnameerror").innerHTML = "";
+    document.getElementById("adderror").innerHTML = "";
+    document.getElementById("phoneerror").innerHTML = "";
+
+    var email = document.getElementById("email").value;
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!email.match(mailformat)) {
+        alert("Must enter a valid email address");
+        document.customerInfoForm.email.focus();
+        return false;
+    }
+    if (firstname === "" || firstname === null) {
+        document.getElementById("fnameerror").innerHTML = "Please enter a first name";
+        return false;
+    }
+    if (lastname === "" || lastname === null) {
+        document.getElementById("lnameerror").innerHTML = "Please enter a last name";
+        return false;
+    }
+    if (address === "" || address === null) {
+        document.getElementById("adderror").innerHTML = "Please enter an address";
+        return false;
+    }
+    if (phone === "" || phone === null) {
+        document.getElementById("phoneerror").innerHTML = "Please enter a phone number";
+        return false;
+    }
+    alert("Thanks for submitting your form");
+    resetInfo();
 }
 
-
+function resetInfo() {
+    document.getElementById("titleDropList").value = "ms";
+    var i;
+    var textboxes = document.getElementsByClassName("guestInfoTextBox");
+    for (i = 0; i < textboxes.length; i++) {
+        textboxes[i].value = "";
+    }
+    document.getElementById("adderror").style.display = "none";
+    document.getElementById("fnameerror").style.display = "none";
+    document.getElementById("lnameerror").style.display = "none";
+    document.getElementById("phoneerror").style.display = "none";
+}
 
 
 

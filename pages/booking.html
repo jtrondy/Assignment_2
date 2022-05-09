@@ -6,50 +6,50 @@
     <title>Bookings</title>
     <link rel="icon" type="image/x-icon" href="../images/icons_logos/titleLogo.png">
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="../scripts/bookings.js"></script>
     <script>
 
     </script>
 </head>
 <body>
     <script src="../scripts/header.js"></script>
-    <script src="../scripts/bookings.js"></script>
     <div class="unified_banner">
         <h1>Booking</h1>
     </div>
+<!--
 
-
-    <form name="form">
-<!--        Contains first name, last name, email address, and phone number-->
+    <form id="booking_form" class="booking_form" name="booking_form">
+&lt;!&ndash;        Contains first name, last name, email address, and phone number&ndash;&gt;
         <div class="booking_information_container-1">
             <div class="bic_section-1">
                 <br>
                 <label for="booking_fname">FIRST NAME<span class="required_form">*</span></label><br>
                 <input class="booking_personal_info" type="text" id="booking_fname" name="booking_fname" placeholder="Enter your first name">
-                <span id="booking_fnameerror" style="color: red;"></span>
+                <span id="booking_fnameerror" style="color:red;"></span>
                 <br>
                 <br>
                 <label for="booking_phone_number">CONTACT NUMBER<span class="required_form">*</span></label><br>
-                <input type="tel" id="booking_phone_number" name="booking_phone_number" placeholder="+64271231234">
+                <input class="booking_personal_info" type="tel" id="booking_phone_number" name="booking_phone_number" placeholder="+64271231234">
                 <br>
                 <br>
             </div>
             <div class="bic_section-1">
                 <br>
                 <label for="booking_lname">LAST NAME<span class="required_form">*</span></label><br>
-                <input type="text" id="booking_lname" name="booking_lname" placeholder="Enter your last name">
+                <input tclass="booking_personal_info" type="text" id="booking_lname" name="booking_lname" placeholder="Enter your last name">
                 <br>
                 <br>
 
                 <label for="booking_email_address">CONTACT EMAIL<span class="required_form">*</span></label><br>
-                <input type="email" id="booking_email_address" name="booking_email_address" placeholder="example@domain.co.nz">
+                <input class="booking_personal_info" type="email" id="booking_email_address" name="booking_email_address" placeholder="example@domain.co.nz">
 
             </div>
         </div>
-<!--        Contains home address, service required, description and urgent checkbox-->
+&lt;!&ndash;        Contains home address, service required, description and urgent checkbox&ndash;&gt;
         <div class="booking_information_container-2">
             <div class="bic_section-2">
                 <label for="booking_home_address">HOME ADDRESS<span class="required_form">*</span></label><br>
-                <input type="text" id="booking_home_address" name="booking_home_address" placeholder="Enter your home address">
+                <input class="booking_personal_info" type="text" id="booking_home_address" name="booking_home_address" placeholder="Enter your home address">
                 <br>
                 <br>
                 <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span></label><br>
@@ -71,7 +71,7 @@
         <div class="unified_banner">
             <h4 style="text-align: left">Payment Details</h4>
         </div>
-<!--        contains card number and full name on card-->
+&lt;!&ndash;        contains card number and full name on card&ndash;&gt;
         <div class="payment_details_container-1">
             <div class="pdc_section-1">
                 <label for="payment_card_number">CARD NUMBER<span class="required_form">*</span></label><br>
@@ -84,7 +84,7 @@
                 <br>
             </div>
         </div>
-<!--            contains expiry date, CVV, terms&conditions. submit & reset-->
+&lt;!&ndash;            contains expiry date, CVV, terms&conditions. submit & reset&ndash;&gt;
         <div class="payment_details_container-2">
             <div class="pdc_section-2">
                 <label for="payment_card_expiry">EXPIRY<span class="required_form">*</span></label><br>
@@ -93,46 +93,80 @@
                 <input type="checkbox" id="payment_terms" name="payment_terms" value="terms">
                 <label for="payment_terms">I accept the Terms and Conditions</label>
                 <br>
-                <input type="submit">
+                <button type="button" onclick="inputCheck();">Submit</button>
             </div>
             <div class="pdc_section-2">
                 <label for="payment_card_cvv">CVV<span class="required_form">*</span></label><br>
                 <input type="number" id="payment_card_cvv" name="payment_card_cvv">
                 <br>
                 <br>
-                <input type="reset">
+                <button type="reset">Reset</button>
                 <br>
                 <br>
             </div>
         </div>
+    </form>-->
+
+    <form id="customerInfoForm" class="customerInfoForm" name="customerInfoForm">
+        <h2>Personal Information</h2>
+        <div class="guestInfo">
+            <div class="singleInfoBox">
+                <label for="titleDropList">Title</label>
+                <select id="titleDropList" class="titleDropList">
+                    <option value="ms">Ms.</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                </select>
+            </div>
+            <div class="singleInfoBox">
+                <label for="firstname">First Name &#42;</label>
+                <input class="guestInfoTextBox" type="text" id="firstname" name="firstname">
+                <span id="fnameerror" style="color: red;"></span>
+            </div>
+            <div class="singleInfoBox">
+                <label for="middlename">Middle Initial</label>
+                <input class="guestInfoTextBox" type="text" id="middlename" name="middlename">
+            </div>
+            <div class="singleInfoBox">
+                <label for="lastname">Last Name &#42;</label>
+                <input class="guestInfoTextBox" type="text" id="lastname" name="lastname">
+                <span id="lnameerror" style="color: red;"></span>
+            </div>
+        </div>
+        <h2>Contact Details</h2>
+        <div class="guestInfo">
+            <div class="singleInfoBox">
+                <label for="address">Address &#42;</label>
+                <input class="guestInfoTextBox" type="text" id="address" name="address">
+                <span id="adderror" style="color: red;"></span>
+            </div>
+            <div class="singleInfoBox">
+                <label for="city">City</label>
+                <input class="guestInfoTextBox" type="text" id="city" name="city">
+            </div>
+            <div class="singleInfoBox">
+                <label for="postalcode">Postal Code</label>
+                <input class="guestInfoTextBox" type="text" id="postalcode" name="postalcode">
+            </div>
+            <div class="singleInfoBox">
+                <label for="phoneNo">Phone Number &#42;</label>
+                <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo">
+                <span id="phoneerror" style="color: red;"></span>
+            </div>
+            <div class="singleInfoBox">
+                <label for="email">Email &#42;</label>
+                <input class="guestInfoTextBox" type="email" id="email" name="email">
+            </div>
+            <div class="singleInfoBox">
+                <p id="guestEmailText"> Email must be correct as it will
+                    be used to send booking confirmation</p>
+            </div>
+        </div>
+        <div class="bookingButtons">
+            <button type="button" onclick="inputCheck();">Confirm Booking</button>
+            <button type="reset">Reset</button>
+        </div>
     </form>
-
-
-
-    <br><br><br><br><br><br><br>
-    <h1> TESTING </h1>
-    <form name="testing">
-        <label for="booking_email_address">CONTACT EMAIL<span class="required_form">*</span>
-            <br>
-            <input type="email" name="email" placeholder="example@domain.co.nz"/>
-        </label>
-        <input type="submit" name="validate" value="Validate" onclick="ValidateEmail(document.testing.email)">
-
-        <br><br>
-    </form>
-    <form name="testing2" action="#">
-        <label for="payment_card_number">CARD NUMBER<span class="required_form">*</span>
-            <br>
-            <input type="text" name="creditCardNum" placeholder="0000 1111 2222 3333"/>
-        </label>
-        <input type="submit" name="submit" value="Submit" onclick="creditCardValidation(document.testing2.creditCardNum)"/>
-    </form>
-    <h1> END TESTING </h1>
-    <br><br><br><br><br><br><br>
-    <script src="../scripts/footer.js" defer></script>
-
-
-
 
 </body>
 </html>
