@@ -109,32 +109,52 @@
 
     <form id="customerInfoForm" class="customerInfoForm" name="customerInfoForm">
         <h2>Personal Information</h2>
-        <div class="guestInfo">
+        <div class="guestInfo_Container1">
+            <div class="bic_section-1">
+                <div class="singleInfoBox">
+                    <label for="firstname">First Name &#42;</label>
+                    <input class="guestInfoTextBox" type="text" id="firstname" name="firstname">
+                    <span id="fnameerror" style="color: red;"></span>
+                </div>
+                <div class="singleInfoBox">
+                    <label for="phoneNo">Phone Number &#42;</label>
+                    <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo">
+                    <span id="phoneerror" style="color: red;"></span>
+                </div>
+            </div>
+            <div class="bic_section-1">
+                <div class="singleInfoBox">
+                    <label for="lastname">Last Name &#42;</label>
+                    <input class="guestInfoTextBox" type="text" id="lastname" name="lastname">
+                    <span id="lnameerror" style="color: red;"></span>
+                </div>
+                <div class="singleInfoBox">
+                    <label for="email">Email &#42;</label>
+                    <input class="guestInfoTextBox" type="email" id="email" name="email">
+                </div>
+            </div>
             <div class="singleInfoBox">
-                <label for="titleDropList">Title</label>
+                <label for="titleDropList">Select Service Required</label>
                 <select id="titleDropList" class="titleDropList">
-                    <option value="ms">Ms.</option>
-                    <option value="mr">Mr.</option>
-                    <option value="mrs">Mrs.</option>
+                    <option value="computerRepair">Computer Repairs</option>
+                    <option value="phoneRepairs">Phone Repairs</option>
+                    <option value="serverRepairs">Server Repairs</option>
                 </select>
             </div>
-            <div class="singleInfoBox">
-                <label for="firstname">First Name &#42;</label>
-                <input class="guestInfoTextBox" type="text" id="firstname" name="firstname">
-                <span id="fnameerror" style="color: red;"></span>
-            </div>
-            <div class="singleInfoBox">
-                <label for="middlename">Middle Initial</label>
-                <input class="guestInfoTextBox" type="text" id="middlename" name="middlename">
-            </div>
-            <div class="singleInfoBox">
-                <label for="lastname">Last Name &#42;</label>
-                <input class="guestInfoTextBox" type="text" id="lastname" name="lastname">
-                <span id="lnameerror" style="color: red;"></span>
-            </div>
+            <p>Price: </p>
+            <br>
+            <label for="booking_description">DESCRIPTION</label><br>
+            <textarea id="booking_description" name="booking_description"></textarea>
+            <br>
+            <br>
+            <input type="checkbox" id="booking_urgent" name="booking_urgent" value="Urgent">
+            <label for="booking_urgent">PLEASE CHECK THIS BOX IF SERVICE IS URGENT</label>
         </div>
-        <h2>Contact Details</h2>
-        <div class="guestInfo">
+        <div class="unified_banner">
+            <h4 style="text-align: left">Payment Details</h4>
+        </div>
+
+        <div class="guestInfo_Container2">
             <div class="singleInfoBox">
                 <label for="address">Address &#42;</label>
                 <input class="guestInfoTextBox" type="text" id="address" name="address">
@@ -148,15 +168,8 @@
                 <label for="postalcode">Postal Code</label>
                 <input class="guestInfoTextBox" type="text" id="postalcode" name="postalcode">
             </div>
-            <div class="singleInfoBox">
-                <label for="phoneNo">Phone Number &#42;</label>
-                <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo">
-                <span id="phoneerror" style="color: red;"></span>
-            </div>
-            <div class="singleInfoBox">
-                <label for="email">Email &#42;</label>
-                <input class="guestInfoTextBox" type="email" id="email" name="email">
-            </div>
+
+
             <div class="singleInfoBox">
                 <p id="guestEmailText"> Email must be correct as it will
                     be used to send booking confirmation</p>

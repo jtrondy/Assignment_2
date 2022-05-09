@@ -99,39 +99,7 @@ input[type="submit"]:hover{
 /*END OF CONTACT US */
 
 
-/*START OF BOOKING*/
-input[type=text] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    justify-content: center;
-}
-input[type=email] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-input[type=checkbox] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-input[type=tel] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-.dropdown_css{
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-/*END OF BOOKING*/
+
 
 
 /*START OF INDEX*/
@@ -380,12 +348,45 @@ input[type=tel] {
 
 
 /*START OF BOOKING*/
-.booking_information_container-1 {
+.guestInfo_Container1 {
     display: flex;
 }
 .payment_details_container-2 {
     display: flex;
 }
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=checkbox] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=tel] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.dropdown_css{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 /*END OF BOOKING*/
 
 /*START OF CUSTOMER FEEDBACK*/

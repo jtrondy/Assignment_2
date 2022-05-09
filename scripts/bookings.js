@@ -29,6 +29,7 @@ function inputCheck() {
 
     document.getElementById("fnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
+    document.getElementById("lnameerror").innerHTML = "";
     document.getElementById("adderror").innerHTML = "";
     document.getElementById("phoneerror").innerHTML = "";
 
@@ -60,7 +61,7 @@ function inputCheck() {
 }
 
 function resetInfo() {
-    document.getElementById("titleDropList").value = "ms";
+    document.getElementById("titleDropList").value = "computerRepair";
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
