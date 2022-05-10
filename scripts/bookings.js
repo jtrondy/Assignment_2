@@ -64,9 +64,9 @@ function inputCheck() {
     //card validation
     let card_name = document.getElementById("card_name").value;
     let card_number = document.getElementById("card_number").value;
-    let card_number_format = /^[0-9]{16}$/;
+    let card_number_format = /^['\d']{16}$/;
     let card_cvv = document.getElementById("card_cvv").value;
-    let card_cvv_format = /^[0-9]{3}$/;
+    let card_cvv_format = /^['\d']{3}$/;
 
     document.getElementById("card_name_error").innerHTML = "";
     document.getElementById("card_number_error").innerHTML = "";
