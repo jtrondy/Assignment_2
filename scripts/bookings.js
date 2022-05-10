@@ -108,7 +108,7 @@ function inputCheck() {
 }
 function resetInfo() {
     //this line resets dropdown list to value "60" which corresponds to Computer Repairs
-    document.getElementById("booking_service_select").value = "60";
+    document.getElementById("booking_service_select").value = "0";
     //this for loop resets the input fields after a successful submission
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
