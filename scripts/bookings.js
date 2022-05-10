@@ -96,7 +96,7 @@ function inputCheck() {
         month = '0' + month;
     }
     today = year + "-" + month;
-    if (today >= selection) {
+    if (today > selection) {
         document.getElementById("card_date_error").innerHTML = "Please enter a valid date";
         return false;
     }
