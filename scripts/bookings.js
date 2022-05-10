@@ -61,6 +61,29 @@ function inputCheck() {
         document.getElementById("phoneerror").innerHTML = "Please enter a phone number";
         return false;
     }
+    //card validation
+    let card_name = document.getElementById("card_name").value;
+    let card_number = document.getElementById("card_number").value;
+    let card_number_format = /^[0-9]{16}$/;
+    let card_cvv = document.getElementById("card_cvv").value;
+    let card_cvv_format = /^[0-9]{3}$/;
+
+    document.getElementById("card_name_error").innerHTML = "";
+    document.getElementById("card_number_error").innerHTML = "";
+    document.getElementById("card_cvv_error").innerHTML = "";
+
+    if (card_name === "" || card_name === null) {
+        document.getElementById("card_name_error").innerHTML = "Please a valid name";
+        return false;
+    }
+    if (!card_number.match(card_number_format)) {
+        document.getElementById("card_number_error").innerHTML = "Please a valid card number";
+        return false;
+    }
+    if (!card_cvv.match(card_cvv_format)) {
+        document.getElementById("card_cvv_error").innerHTML = "Please enter a valid CVV";
+        return false;
+    }
     alert("Thanks for submitting your form");
     resetInfo();
 }
