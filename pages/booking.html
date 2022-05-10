@@ -136,7 +136,8 @@
         </div>
         <div class="bic_section-1">
             <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
-                <select class=dropdown_css" id="booking_service_select">
+                <select class=dropdown_css" id="booking_service_select" onchange="updatePrice()">
+                    <option id="dropdown_placeholder" value="0">Please select service</option>
                     <option id="comp_repair_price" value="60">Computer Repairs</option>
                     <option id="phone_repair_price" value="40">Phone Repairs</option>
                     <option id="server_repair_price" value="80">Server Repairs</option>
@@ -144,9 +145,8 @@
             </label>
         </div>
         <div class="bic_section-1">
-            <span>Price: </span><span id="booking_price"></span>
+            <span>Price: </span><span id="booking_price">$0</span>
             <br>
-            <input type="button" value="calculate price" onclick="updatePrice()">
         </div>
         <br>
         <label for="booking_description">DESCRIPTION</label><br>
