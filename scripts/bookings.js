@@ -32,11 +32,18 @@ function inputCheck() {
     var address = document.getElementById("address").value;
     var phone = document.getElementById("phoneNo").value;
 
+
+    //setting error values to an empty string to clear previous errors
     document.getElementById("fnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
     document.getElementById("adderror").innerHTML = "";
     document.getElementById("phoneerror").innerHTML = "";
+
+    document.getElementById("card_name_error").innerHTML = "";
+    document.getElementById("card_number_error").innerHTML = "";
+    document.getElementById("card_cvv_error").innerHTML = "";
+    document.getElementById("card_date_error").innerHTML = "";
 
     var email = document.getElementById("email").value;
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -68,10 +75,6 @@ function inputCheck() {
     let card_cvv = document.getElementById("card_cvv").value;
     let card_cvv_format = /^[0-9]{3}$/;
 
-    document.getElementById("card_name_error").innerHTML = "";
-    document.getElementById("card_number_error").innerHTML = "";
-    document.getElementById("card_cvv_error").innerHTML = "";
-
     if (card_name === "" || card_name === null) {
         document.getElementById("card_name_error").innerHTML = "Please a valid name";
         return false;
@@ -85,7 +88,7 @@ function inputCheck() {
         return false;
     }
     //DATE VALIDATION
-    document.getElementById("card_date_error").innerHTML = "";
+
     var today = new Date();
     var month = today.getMonth();
     var year = today.getFullYear();
