@@ -90,7 +90,7 @@ function inputCheck() {
     //DATE VALIDATION
 
     var today = new Date();
-    var month = today.getMonth();
+    var month = today.getMonth() + 1; // +1 because values are 0 - 11 -> +1 makes 1 - 12
     var year = today.getFullYear();
     var selection = document.getElementById("card_date").value;
 
