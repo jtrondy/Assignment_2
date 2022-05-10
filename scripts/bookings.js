@@ -84,10 +84,25 @@ function inputCheck() {
         document.getElementById("card_cvv_error").innerHTML = "Please enter a valid CVV";
         return false;
     }
+    //DATE VALIDATION
+    document.getElementById("card_date_error").innerHTML = "";
+    var today = new Date();
+    var month = today.getMonth();
+    var year = today.getFullYear();
+    var selection = document.getElementById("card_date").value;
+
+    //adds a 0 infront of month if less than 10, EG 5 -> 05
+    if (month < 10) {
+        month = '0' + month;
+    }
+    today = year + "-" + month;
+    if (today >= selection) {
+        document.getElementById("card_date_error").innerHTML = "Please enter a valid date";
+        return false;
+    }
     alert("Thanks for submitting your form");
     resetInfo();
 }
-
 function resetInfo() {
     //this line resets dropdown list to value "60" which corresponds to Computer Repairs
     document.getElementById("booking_service_select").value = "60";
@@ -102,6 +117,7 @@ function resetInfo() {
     document.getElementById("lnameerror").style.display = "none";
     document.getElementById("phoneerror").style.display = "none";
 }
+
 
 
 
