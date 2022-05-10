@@ -64,9 +64,9 @@ function inputCheck() {
     //card validation
     let card_name = document.getElementById("card_name").value;
     let card_number = document.getElementById("card_number").value;
-    let card_number_format = /^['\d']{16}$/;
+    let card_number_format = /^[0-9]{16}$/;
     let card_cvv = document.getElementById("card_cvv").value;
-    let card_cvv_format = /^['\d']{3}$/;
+    let card_cvv_format = /^[0-9]{3}$/;
 
     document.getElementById("card_name_error").innerHTML = "";
     document.getElementById("card_number_error").innerHTML = "";
@@ -89,8 +89,9 @@ function inputCheck() {
 }
 
 function resetInfo() {
-    /*This line stops the form from resetting on a successful submit
-    document.getElementById("titleDropList").value = "computerRepair";*/
+    //this line resets dropdown list to value "60" which corresponds to Computer Repairs
+    document.getElementById("booking_service_select").value = "60";
+    //this for loop resets the input fields after a successful submission
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
