@@ -89,7 +89,8 @@ function inputCheck() {
 }
 
 function resetInfo() {
-    document.getElementById("titleDropList").value = "computerRepair";
+    /*This line stops the form from resetting on a successful submit
+    document.getElementById("titleDropList").value = "computerRepair";*/
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
