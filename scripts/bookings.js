@@ -23,8 +23,8 @@ function creditCardValidation(creditCardNum) {
 }*/
 function updatePrice() {
     let price = document.getElementById("booking_service_select").value;
-    console.log(price);
-    document.getElementById("booking_price").textContent = '$' + price.toString();
+    // console.log(price);
+    document.getElementById("booking_price").innerHTML = '$' + price.toString();
 }
 function inputCheck() {
     var firstname = document.getElementById("firstname").value;
@@ -109,6 +109,8 @@ function inputCheck() {
 function resetInfo() {
     //this line resets dropdown list to value "60" which corresponds to Computer Repairs
     document.getElementById("booking_service_select").value = "0";
+    document.getElementById("booking_price").innerHTML = '$0';
+
     //this for loop resets the input fields after a successful submission
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
