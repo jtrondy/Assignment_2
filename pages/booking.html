@@ -108,7 +108,10 @@
     </form>-->
 
     <form id="customerInfoForm" class="customerInfoForm" name="customerInfoForm">
-        <h2>Personal Information</h2>
+        <div class="unified_banner">
+            <h2>Personal Information</h2>
+        </div>
+
         <div class="guestInfo_Container1">
             <div class="bic_section-1">
                 <div class="singleInfoBox">
@@ -118,6 +121,7 @@
                 </div>
                 <div class="singleInfoBox">
                     <label for="phoneNo">Phone Number<span class="required_form">*</span></label>
+                    <br>
                     <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo">
                     <span id="phoneerror" style="color: red;"></span>
                 </div>
@@ -134,49 +138,49 @@
                 </div>
             </div>
         </div>
-        <div class="bic_section-1">
-            <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
-                <select class="dropdown_css" id="booking_service_select" onchange="updatePrice()">
-                    <option id="dropdown_placeholder" value="0">Please select service</option>
-                    <option id="comp_repair_price" value="60">Computer Repairs</option>
-                    <option id="phone_repair_price" value="40">Phone Repairs</option>
-                    <option id="server_repair_price" value="80">Server Repairs</option>
-                </select>
-            </label>
-        </div>
-        <div class="bic_section-1">
-            <span>Price: </span><span id="booking_price">$0</span>
-            <br>
+        <br>
+        <div class="bookingService">
+            <div class="bic_section-1">
+                <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
+                    <select class="dropdown_css" id="booking_service_select" onchange="updatePrice()">
+                        <option id="dropdown_placeholder" value="0">Please select service</option>
+                        <option id="comp_repair_price" value="60">Computer Repairs</option>
+                        <option id="phone_repair_price" value="40">Phone Repairs</option>
+                        <option id="server_repair_price" value="80">Server Repairs</option>
+                    </select>
+                </label>
+                <div class="bic_section-1">
+                    <span>Price: </span><span id="booking_price">$0</span>
+                    <br>
+                </div>
+            </div>
+            <div class="bic_section-1">
+                <label for="booking_description">DESCRIPTION</label><br>
+                <textarea id="booking_description" name="booking_description"></textarea>
+            </div>
         </div>
         <br>
-        <label for="booking_description">DESCRIPTION</label><br>
-        <textarea id="booking_description" name="booking_description"></textarea>
-        <br>
-        <br>
-        <input type="checkbox" id="booking_urgent" name="booking_urgent" value="Urgent">
-        <label for="booking_urgent">PLEASE CHECK THIS BOX IF SERVICE IS URGENT</label>
-        <div class="unified_banner">
-            <h4 style="text-align: left">Payment Details</h4>
-        </div>
-        <div class="guestInfo_Container2">
+        <div class="addressInfo">
             <div class="singleInfoBox">
                 <label for="address">Address<span class="required_form">*</span></label>
+                <br>
                 <input class="guestInfoTextBox" type="text" id="address" name="address">
                 <span id="adderror" style="color: red;"></span>
             </div>
+
             <div class="singleInfoBox">
                 <label for="city">City</label>
                 <input class="guestInfoTextBox" type="text" id="city" name="city">
-            </div>
-            <div class="singleInfoBox">
-                <label for="postalcode">Postal Code</label>
+                <label for="postalcode" style="margin-left:3%;">Postal Code</label>
                 <input class="guestInfoTextBox" type="text" id="postalcode" name="postalcode">
             </div>
 
 
             <div class="singleInfoBox">
-                <p id="guestEmailText"> Email must be correct as it will
-                    be used to send booking confirmation</p>
+                <br>
+                <input type="checkbox" id="booking_urgent" name="booking_urgent" value="Urgent">
+                <label for="booking_urgent">PLEASE CHECK THIS BOX IF SERVICE IS URGENT</label>
+                <p id="guestEmailText"> Email must be correct as it will be used to send booking confirmation</p>
             </div>
         </div>
         <div class="unified_banner">

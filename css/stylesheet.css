@@ -349,37 +349,57 @@ input[type="submit"]:hover{
 
 /*START OF BOOKING*/
 .guestInfo_Container1 {
+    width: 80%;
     display: flex;
-}
-.payment_details_container-2 {
-    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+
 }
 
-input[type=text] {
+.bic_section-1{
+    width: 40%;
+}
+
+.bookingService{
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.bookingService #booking_description {
+    margin-top:8px;
+    resize: vertical;
+    height: 70px;
+    width: 90%;
+    font-size: 16px;
+}
+
+.addressInfo {
+    justify-content: center;
+    width:68%;
+    margin-left:18%;
+}
+
+.addressInfo #city{
+    width: 60%;
+}
+
+.addressInfo #postalcode{
+    width: 10%;
+    padding-left:10%;
+}
+
+input[type=text],[type=email],[type=tel],[type=number]{
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     justify-content: center;
 }
-input[type=email] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-input[type=checkbox] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-input[type=tel] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
+
 .dropdown_css{
     width: 90%;
     padding: 12px 20px;
