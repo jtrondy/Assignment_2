@@ -1,29 +1,6 @@
-/*function ValidateEmail(input) {
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (input.value.match(validRegex)) {
-        alert("Valid email address!");
-        document.form1.text1.focus();
-        return true;
-    } else {
-        alert("Invalid email address!");
-        document.form1.text1.focus();
-        return false;
-    }
-}
 
-function creditCardValidation(creditCardNum) {
-    let regEx = /^[0-9]{13,19}$/;
-    if(creditCardNum.value.match(regEx)) {
-        alert("Valid Card");
-        return true;
-    } else {
-        alert("Please enter a valid credit card number.");
-        return false;
-    }
-}*/
 function updatePrice() {
     let price = document.getElementById("booking_service_select").value;
-    // console.log(price);
     document.getElementById("booking_price").innerHTML = '$' + price.toString();
 }
 function inputCheck() {
@@ -129,7 +106,7 @@ function inputCheck() {
     resetInfo();
 }
 function resetInfo() {
-    //this line resets dropdown list to value "60" which corresponds to Computer Repairs
+    //this line resets dropdown list to value "0" which corresponds to "Please select a service"
     document.getElementById("booking_service_select").value = "0";
     document.getElementById("booking_price").innerHTML = '$0';
 
@@ -144,15 +121,6 @@ function resetInfo() {
     for (i = 0; i < textboxes.length; i++) {
         textboxes[i].value = "";
     }
-
-        //resetting checkboxes on submission
-
-    // let j;
-    // for (j = 0; j < checkboxes.length; j++) {
-    //
-    // }
-
-
 
 }
 
