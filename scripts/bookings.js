@@ -133,20 +133,26 @@ function resetInfo() {
     document.getElementById("booking_service_select").value = "0";
     document.getElementById("booking_price").innerHTML = '$0';
 
+    //resetting checkboxes on booking page to unchecked
+    document.getElementById("booking_terms").checked = false;
+    document.getElementById("booking_urgent").checked = false;
+
+
     //this for loop resets the input fields after a successful submission
     var i;
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
         textboxes[i].value = "";
-
-/*        //resetting checkboxes on submission
-    let checkboxes = document.getElementsByClassName("booking_checkbox");
-    let j;
-    for (j = 0; i < checkboxes.length; i++) {
-        checkboxes[j].removeAttribute('checked');
-    }*/
-
     }
+
+        //resetting checkboxes on submission
+
+    // let j;
+    // for (j = 0; j < checkboxes.length; j++) {
+    //
+    // }
+
+
 
 }
 
