@@ -31,6 +31,7 @@ function inputCheck() {
     var lastname = document.getElementById("lastname").value;
     var address = document.getElementById("address").value;
     var phone = document.getElementById("phoneNo").value;
+    var service = document.getElementById("booking_service_select").value;
 
 
     //setting error values to an empty string to clear previous errors
@@ -44,6 +45,7 @@ function inputCheck() {
     document.getElementById("card_number_error").innerHTML = "";
     document.getElementById("card_cvv_error").innerHTML = "";
     document.getElementById("card_date_error").innerHTML = "";
+    document.getElementById("service_error").innerHTML = "";
 
     document.getElementById("booking_terms_error").innerHTML = "";
 
@@ -62,14 +64,24 @@ function inputCheck() {
         document.getElementById("lnameerror").innerHTML = "Please enter a last name";
         return false;
     }
-    if (address === "" || address === null) {
-        document.getElementById("adderror").innerHTML = "Please enter an address";
-        return false;
-    }
+
     if (phone === "" || phone === null) {
         document.getElementById("phoneerror").innerHTML = "Please enter a phone number";
         return false;
     }
+
+    if (service === '0') {
+        document.getElementById("service_error").innerHTML = "Please select a service";
+        return false;
+    }
+
+    if (address === "" || address === null) {
+        document.getElementById("adderror").innerHTML = "Please enter an address";
+        return false;
+    }
+
+
+
     //card validation
     let card_name = document.getElementById("card_name").value;
     let card_number = document.getElementById("card_number").value;
@@ -89,6 +101,7 @@ function inputCheck() {
         document.getElementById("card_cvv_error").innerHTML = "Please enter a valid CVV";
         return false;
     }
+
     //DATE VALIDATION
 
     var today = new Date();
@@ -107,8 +120,8 @@ function inputCheck() {
     }
 
     //terms and conditions checkbox
-    let checkbox = document.getElementById("booking_terms").checked;
-    if (!checkbox) {
+    let terms_checkbox = document.getElementById("booking_terms").checked;
+    if (!terms_checkbox) {
         document.getElementById("booking_terms_error").innerHTML = "Please agree to the terms and conditions";
         return false;
     }
@@ -125,11 +138,16 @@ function resetInfo() {
     var textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
         textboxes[i].value = "";
+
+/*        //resetting checkboxes on submission
+    let checkboxes = document.getElementsByClassName("booking_checkbox");
+    let j;
+    for (j = 0; i < checkboxes.length; i++) {
+        checkboxes[j].removeAttribute('checked');
+    }*/
+
     }
-    document.getElementById("adderror").style.display = "none";
-    document.getElementById("fnameerror").style.display = "none";
-    document.getElementById("lnameerror").style.display = "none";
-    document.getElementById("phoneerror").style.display = "none";
+
 }
 
 

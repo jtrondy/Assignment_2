@@ -153,6 +153,7 @@
                         <option id="server_repair_price" value="80">Server Repairs</option>
                     </select>
                 </label>
+                <span id="service_error" style="color: red;"></span>
                 <div class="bic_section-1">
                     <span>Price: </span><span id="booking_price">$0</span>
                     <br>
@@ -169,6 +170,7 @@
                 <label for="address">Address<span class="required_form">*</span></label>
                 <br>
                 <input class="guestInfoTextBox" type="text" id="address" name="address">
+                <br>
                 <span id="adderror" style="color: red;"></span>
             </div>
 
@@ -182,7 +184,7 @@
 
             <div class="singleInfoBox">
                 <br>
-                <input type="checkbox" id="booking_urgent" name="booking_urgent" value="Urgent">
+                <input type="checkbox" id="booking_urgent" name="booking_urgent" class="booking_checkbox" value="Urgent">
                 <label for="booking_urgent">PLEASE CHECK THIS BOX IF SERVICE IS URGENT</label>
 
             </div>
@@ -211,7 +213,7 @@
             <br>
         </div>
         <div class="singleInfoBox">
-            <input type="checkbox" id="booking_terms" name="booking_terms" value="terms">
+            <input type="checkbox" id="booking_terms" name="booking_terms" class="booking_checkbox" value="terms">
             <label for="booking_terms">agree to terms and conditions<span class="required_form">*</span></label>
             <span id="booking_terms_error" style="color: red;"></span>
             <br>
