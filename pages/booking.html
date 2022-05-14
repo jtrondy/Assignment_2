@@ -131,14 +131,18 @@
                     <label for="lastname">Last Name<span class="required_form">*</span></label>
                     <input class="guestInfoTextBox" type="text" id="lastname" name="lastname">
                     <span id="lnameerror" style="color: red;"></span>
+
                 </div>
                 <div class="singleInfoBox">
                     <label for="email">Email<span class="required_form">*</span></label>
                     <input class="guestInfoTextBox" type="email" id="email" name="email">
+                    <p id="guestEmailText" style="font-size: 14px"> Email must be correct as it will be used to send booking confirmation</p>
+
                 </div>
             </div>
         </div>
         <br>
+
         <div class="bookingService">
             <div class="bic_section-1">
                 <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
@@ -169,9 +173,9 @@
             </div>
 
             <div class="singleInfoBox">
-                <label for="city">City</label>
-                <input class="guestInfoTextBox" type="text" id="city" name="city">
-                <label for="postalcode" style="margin-left:3%;">Postal Code</label>
+                <label for="city">City</label><br>
+                <input class="guestInfoTextBox" type="text" id="city" name="city"><br>
+                <label for="postalcode">Postal Code</label><br>
                 <input class="guestInfoTextBox" type="text" id="postalcode" name="postalcode">
             </div>
 
@@ -180,7 +184,7 @@
                 <br>
                 <input type="checkbox" id="booking_urgent" name="booking_urgent" value="Urgent">
                 <label for="booking_urgent">PLEASE CHECK THIS BOX IF SERVICE IS URGENT</label>
-                <p id="guestEmailText"> Email must be correct as it will be used to send booking confirmation</p>
+
             </div>
         </div>
         <div class="unified_banner">
@@ -203,6 +207,12 @@
             <label for="card_date">DATE ON CARD<span class="required_form">*</span></label><br>
             <input class="guestInfoTextBox" id="card_date" type="month" name="card_date">
             <span id="card_date_error" style="color: red;"></span>
+            <br>
+            <br>
+        </div>
+        <div class="singleInfoBox">
+            <input type="checkbox" id="booking_terms" name="booking_terms" value="terms_and_conditions">
+            <label for="booking_terms">agree to terms and conditions<span class="required_form">*</span></label>
             <br>
             <br>
         </div>
