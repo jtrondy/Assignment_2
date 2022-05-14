@@ -4,11 +4,11 @@ function updatePrice() {
     document.getElementById("booking_price").innerHTML = '$' + price.toString();
 }
 function inputCheck() {
-    var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-    var address = document.getElementById("address").value;
-    var phone = document.getElementById("phoneNo").value;
-    var service = document.getElementById("booking_service_select").value;
+    let firstname = document.getElementById("firstname").value;
+    let lastname = document.getElementById("lastname").value;
+    let address = document.getElementById("address").value;
+    let phone = document.getElementById("phoneNo").value;
+    let service = document.getElementById("booking_service_select").value;
 
 
     //setting error values to an empty string to clear previous errors
@@ -26,8 +26,8 @@ function inputCheck() {
 
     document.getElementById("booking_terms_error").innerHTML = "";
 
-    var email = document.getElementById("email").value;
-    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let email = document.getElementById("email").value;
+    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.match(mailformat)) {
         alert("Must enter a valid email address");
         document.customerInfoForm.email.focus();
@@ -62,9 +62,9 @@ function inputCheck() {
     //card validation
     let card_name = document.getElementById("card_name").value;
     let card_number = document.getElementById("card_number").value;
-    let card_number_format = /^[0-9]{16}$/;
+    let card_number_format = /^\d{16}$/;
     let card_cvv = document.getElementById("card_cvv").value;
-    let card_cvv_format = /^[0-9]{3}$/;
+    let card_cvv_format = /^\d{3}$/;
 
     if (card_name === "" || card_name === null) {
         document.getElementById("card_name_error").innerHTML = "Please a valid name";
@@ -81,10 +81,10 @@ function inputCheck() {
 
     //DATE VALIDATION
 
-    var today = new Date();
-    var month = today.getMonth() + 1; // +1 because values are 0 - 11 -> +1 makes 1 - 12
-    var year = today.getFullYear();
-    var selection = document.getElementById("card_date").value;
+    let today = new Date();
+    let month = today.getMonth() + 1; // +1 because values are 0 - 11 -> +1 makes 1 - 12
+    let year = today.getFullYear();
+    let selection = document.getElementById("card_date").value;
 
     //adds a 0 infront of month if less than 10, EG 5 -> 05
     if (month < 10) {
@@ -116,8 +116,8 @@ function resetInfo() {
 
 
     //this for loop resets the input fields after a successful submission
-    var i;
-    var textboxes = document.getElementsByClassName("guestInfoTextBox");
+    let i;
+    let textboxes = document.getElementsByClassName("guestInfoTextBox");
     for (i = 0; i < textboxes.length; i++) {
         textboxes[i].value = "";
     }
