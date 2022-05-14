@@ -45,6 +45,8 @@ function inputCheck() {
     document.getElementById("card_cvv_error").innerHTML = "";
     document.getElementById("card_date_error").innerHTML = "";
 
+    document.getElementById("booking_terms_error").innerHTML = "";
+
     var email = document.getElementById("email").value;
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.match(mailformat)) {
@@ -101,6 +103,13 @@ function inputCheck() {
     today = year + "-" + month;
     if (today > selection) {
         document.getElementById("card_date_error").innerHTML = "Please enter a valid date";
+        return false;
+    }
+
+    //terms and conditions checkbox
+    let checkbox = document.getElementById("booking_terms").checked;
+    if (!checkbox) {
+        document.getElementById("booking_terms_error").innerHTML = "Please agree to the terms and conditions";
         return false;
     }
     alert("Thanks for submitting your form");
