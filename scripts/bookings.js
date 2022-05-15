@@ -47,7 +47,7 @@ function inputCheck() {
         document.getElementById("phoneerror").innerHTML = "Please enter a phone number";
         return false;
     }
-
+    //value '0' corresponds to "Please select a service" in the dropdown selector.
     if (service === '0') {
         document.getElementById("service_error").innerHTML = "Please select a service";
         return false;
