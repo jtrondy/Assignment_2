@@ -19,34 +19,34 @@
 
     <form id="customerInfoForm" class="customerInfoForm" name="customerInfoForm">
         <div class="unified_banner">
+<!--            Personal information form section-->
             <h2>Personal Information</h2>
         </div>
         <div class="guestInfo_Container1">
             <div class="bic_section-1">
                 <div class="singleInfoBox">
                     <label for="firstname">First Name<span class="required_form">*</span></label>
-                    <input class="guestInfoTextBox" type="text" id="firstname" name="firstname">
+                    <input class="guestInfoTextBox" type="text" id="firstname" name="firstname" placeholder="Enter your first name">
                     <span id="fnameerror" style="color: red;"></span>
                 </div>
                 <div class="singleInfoBox">
                     <label for="phoneNo">Phone Number<span class="required_form">*</span></label>
                     <br>
-                    <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo">
+                    <input class="guestInfoTextBox" type="number" id="phoneNo" name="phoneNo" placeholder="0211234567">
                     <span id="phoneerror" style="color: red;"></span>
                 </div>
             </div>
             <div class="bic_section-1">
                 <div class="singleInfoBox">
                     <label for="lastname">Last Name<span class="required_form">*</span></label>
-                    <input class="guestInfoTextBox" type="text" id="lastname" name="lastname">
+                    <input class="guestInfoTextBox" type="text" id="lastname" name="lastname"  placeholder="Enter your last name">
                     <span id="lnameerror" style="color: red;"></span>
 
                 </div>
                 <div class="singleInfoBox">
                     <label for="email">Email<span class="required_form">*</span></label>
-                    <input class="guestInfoTextBox" type="email" id="email" name="email">
+                    <input class="guestInfoTextBox" type="email" id="email" name="email"  placeholder="example@domain.com">
                     <p id="guestEmailText" style="font-size: 14px"> Email must be correct as it will be used to send booking confirmation</p>
-
                 </div>
             </div>
         </div>
@@ -54,6 +54,7 @@
 
         <div class="bookingService">
             <div class="bic_section-1">
+<!--                Dropdown box for service selection-->
                 <label for="booking_service_select">SELECT SERVICE REQUIRED<span class="required_form">*</span>
                     <select class="dropdown_css" id="booking_service_select" onchange="updatePrice()">
                         <option id="dropdown_placeholder" value="0">Please select service</option>
@@ -78,16 +79,14 @@
             <div class="singleInfoBox">
                 <label for="address">Address<span class="required_form">*</span></label>
                 <br>
-                <input class="guestInfoTextBox" type="text" id="address" name="address">
+                <input class="guestInfoTextBox" type="text" id="address" name="address"  placeholder="Enter your address">
                 <br>
                 <span id="adderror" style="color: red;"></span>
             </div>
 
             <div class="singleInfoBox">
                 <label for="city">City</label><br>
-                <input class="guestInfoTextBox" type="text" id="city" name="city"><br>
-                <label for="postalcode">Postal Code</label><br>
-                <input class="guestInfoTextBox" type="text" id="postalcode" name="postalcode">
+                <input class="guestInfoTextBox" type="text" id="city" name="city"  placeholder="Enter your city"><br>
             </div>
 
 
@@ -99,20 +98,21 @@
             </div>
         </div>
 
+<!--        Payment details form section-->
         <div class="unified_banner">
             <h4>Payment Details</h4>
         </div>
         <div class="card_validation">
             <label for="card_name">NAME ON CARD<span class="required_form">*</span></label>
-            <input class="guestInfoTextBox" type="text" id="card_name" name="card_name"><br>
+            <input class="guestInfoTextBox" type="text" id="card_name" name="card_name"  placeholder="Name on card"><br>
             <span id="card_name_error" style="color: red;"></span>
             <br>
             <label for="card_number">CARD NUMBER<span class="required_form">*</span></label>
-            <input class="guestInfoTextBox" type="text" id="card_number" name="card_number"><br>
+            <input class="guestInfoTextBox" type="text" id="card_number" name="card_number" placeholder="1234567890123456"><br>
             <span id="card_number_error" style="color: red;"></span>
             <br>
             <label for="card_cvv">CVV<span class="required_form">*</span></label><br>
-            <input class="guestInfoTextBox" id="card_cvv" type="text" name="card_cvv">
+            <input class="guestInfoTextBox" id="card_cvv" type="text" name="card_cvv" placeholder="123">
             <br>
             <span id="card_cvv_error" style="color: red;"></span>
             <br>
