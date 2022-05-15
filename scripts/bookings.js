@@ -26,6 +26,7 @@ function inputCheck() {
 
     document.getElementById("booking_terms_error").innerHTML = "";
 
+    //input validation
     let email = document.getElementById("email").value;
     let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.match(mailformat)) {
