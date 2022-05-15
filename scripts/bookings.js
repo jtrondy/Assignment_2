@@ -11,7 +11,7 @@ function inputCheck() {
     let service = document.getElementById("booking_service_select").value;
 
 
-    //setting error values to an empty string to clear previous errors
+    //setting error text to an empty string to clear previously caught errors
     document.getElementById("fnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
@@ -26,6 +26,7 @@ function inputCheck() {
 
     document.getElementById("booking_terms_error").innerHTML = "";
 
+    //input validation
     let email = document.getElementById("email").value;
     let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.match(mailformat)) {
@@ -46,7 +47,7 @@ function inputCheck() {
         document.getElementById("phoneerror").innerHTML = "Please enter a phone number";
         return false;
     }
-
+    //value '0' corresponds to "Please select a service" in the dropdown selector.
     if (service === '0') {
         document.getElementById("service_error").innerHTML = "Please select a service";
         return false;
