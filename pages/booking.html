@@ -21,7 +21,6 @@
         <div class="unified_banner">
             <h2>Personal Information</h2>
         </div>
-
         <div class="guestInfo_Container1">
             <div class="bic_section-1">
                 <div class="singleInfoBox">
@@ -99,8 +98,10 @@
 
             </div>
         </div>
+
+
         <div class="unified_banner">
-            <h4 style="text-align: left">Payment Details</h4>
+            <h4>Payment Details</h4>
         </div>
         <div class="card_validation">
             <label for="card_name">NAME ON CARD<span class="required_form">*</span></label>
@@ -121,18 +122,19 @@
             <span id="card_date_error" style="color: red;"></span>
             <br>
             <br>
+            <div class="singleInfoBox">
+                <input type="checkbox" id="booking_terms" name="booking_terms" value="terms">
+                <label for="booking_terms">Agree to Terms and Conditions<span class="required_form">*</span></label>
+                <span id="booking_terms_error" style="color: red;"></span>
+                <br>
+                <br>
+            </div>
+            <div class="bookingButtons">
+                <button type="button" onclick="inputCheck();">Confirm Booking</button>
+                <button type="reset">Reset</button>
+            </div>
         </div>
-        <div class="singleInfoBox">
-            <input type="checkbox" id="booking_terms" name="booking_terms" value="terms">
-            <label for="booking_terms">agree to terms and conditions<span class="required_form">*</span></label>
-            <span id="booking_terms_error" style="color: red;"></span>
-            <br>
-            <br>
-        </div>
-        <div class="bookingButtons">
-            <button type="button" onclick="inputCheck();">Confirm Booking</button>
-            <button type="reset">Reset</button>
-        </div>
+
     </form>
 
 </body>

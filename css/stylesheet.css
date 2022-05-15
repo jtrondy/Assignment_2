@@ -348,6 +348,7 @@ input[type="submit"]:hover{
 
 
 /*START OF BOOKING*/
+
 .guestInfo_Container1 {
     width: 80%;
     display: flex;
@@ -406,6 +407,15 @@ input[type=text],[type=email],[type=tel],[type=number]{
     margin: 8px 0;
     box-sizing: border-box;
 }
+
+.card_validation{
+    margin-left:20%;
+    margin-right:20%;
+    width:60%;
+    justify-content: center;
+}
+
+
 
 /*END OF BOOKING*/
 
