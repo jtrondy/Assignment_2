@@ -11,7 +11,7 @@ function inputCheck() {
     let service = document.getElementById("booking_service_select").value;
 
 
-    //setting error values to an empty string to clear previous errors
+    //setting error text to an empty string to clear previously caught errors
     document.getElementById("fnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
     document.getElementById("lnameerror").innerHTML = "";
