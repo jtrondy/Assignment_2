@@ -1,5 +1,6 @@
 const template = document.createElement('template');
 
+// html template to get called
 template.innerHTML = `
     
     <footer class="index_footer">

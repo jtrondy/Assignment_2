@@ -1,7 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 1;  // creates variable slideIndex and sets it to 1
+showSlides(slideIndex); // calls showSlides function
 
-function plusSlides(n){
+function plusSlides(n){  // function to increase slideIndex
     showSlides(slideIndex += n);
 }
 

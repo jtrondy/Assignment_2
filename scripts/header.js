@@ -8,3 +8,5 @@ document.write('<header>' +
     '<a href="../pages/customerFeedback.html">FEEDBACK</a>' +
     '</nav>' +
     '</header>')
+
+// creates template for header navbar in html code that can be called by each page
