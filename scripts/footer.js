@@ -1,6 +1,6 @@
-const template = document.createElement('template');
+const template = document.createElement('template'); // declaring template element
 
-// html template to get called
+// adding content to template
 template.innerHTML = `
     
     <footer class="index_footer">
@@ -11,4 +11,4 @@ template.innerHTML = `
 `;
 
 document.body.appendChild(template.content);
-
+// appends to end of body element
